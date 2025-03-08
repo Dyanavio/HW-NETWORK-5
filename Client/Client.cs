@@ -46,7 +46,7 @@ namespace Client
                     }
                     byte[] buffer = Encoding.UTF8.GetBytes(city);
                     await stream.WriteAsync(buffer, 0, buffer.Length);
-
+                     
                     if (city == "exit") break;
 
                     buffer = new byte[1024];
